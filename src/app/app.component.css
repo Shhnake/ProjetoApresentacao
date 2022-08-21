@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#body{
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: black;
+    background-image: linear-gradient( to right, red, transparent, rgb(10, 119, 15) ); 
+}
+#conteudo{
+    text-align: center;
+    margin-top: 190px;
+    margin-left: -90px;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+#boxGustavo{
+    background-color: rgb(230, 0, 1);
+    width: 620px;
+    height: 520px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+.infpessoais{
+  color: white;
+  font-family: 'Silkscreen', cursive;
+  font-size: 22px;
+  padding-bottom: 8px;
+  text-shadow:
+
+               -1px -1px 0px black,
+               -1px 1px 0px black,
+                1px -1px 0px black,
+                1px 0px 0px black;
+}
+.inf{
+    padding-left: 50px;
+    text-align: left;
+}
+a:link{
+  text-decoration: none;
+  color: white;
+}
+a:visited{
+  color: white;
+  text-decoration: none;
+}
+#nomeGustavo{
+    margin-left: 150px;
+}
+#nomeVitor{
+  margin-left: 170px;
+}
+#github{
+    text-decoration: none;
+}
+#mario{
+    width: 90px;
+    height: 90px;
+}
+#luigi{
+    width: 40px;
+    height: 70px;
+}
+section {
+    width: 500px;
+    margin: 50px auto;
+  }
+  
+  .face {
+    width: 600px;
+    height: 500px;
+    perspective: 700px;
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 700ms;
+    transition: 7s;
+  }
+  
+  .front {
+    background: rgb(55, 154, 37);
+    z-index: 1;
+    
+  }
+  
+  .back {
+    background: rgb(55, 154, 37);
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    padding-right: 20px;
+    transition: 7s;
+  } 
+  .face:active .front {
+    transform: rotateY(180deg);
+    z-index: 0;
+    padding-right: 20px;
+    transition: 4s;
+  }
+  
+  .face:active .back {
+    transform: rotateY(0);
+    z-index: 1;
+    transition: 4s;
+  }
